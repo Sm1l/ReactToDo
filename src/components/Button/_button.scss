@@ -1,0 +1,19 @@
+@import "./../App/variables";
+
+.button {
+  color: inherit;
+  font-size: inherit;
+  padding: 10px;
+  border: 2px solid $color-dark-Sand;
+  background-color: $color-grey;
+  transition: color 300ms ease-out;
+  border-radius: 10px;
+  color: $color-dark-Sand;
+  transition: all 500ms ease-out;
+
+  &:hover {
+    // color: $color-orange;
+    // background-color: $color-dark-Sand;
+    transition: all 500ms ease-out;
+  }
+}

@@ -1,0 +1,42 @@
+@import "./../App/variables.scss";
+.add {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__title {
+  }
+
+  &__form {
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__text {
+    height: 50px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 8px;
+    color: $color-dark-Sand;
+    &::placeholder {
+      color: $color-dark-Sand;
+      opacity: 0.7;
+    }
+  }
+
+  &__button {
+    &:hover {
+      color: $color-grey;
+      background-color: $color-dark-Sand;
+      transform: scale(1.05);
+    }
+  }
+}

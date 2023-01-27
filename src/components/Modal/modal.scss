@@ -1,0 +1,66 @@
+@import "../App/variables";
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(209, 209, 209, 0.5);
+  // opacity: 0.5;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    justify-content: center;
+    // align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-grey;
+    min-width: 600px;
+    min-height: 300px;
+    border: 1px solid $color-dark-Sand;
+    border-radius: 20px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__input {
+    flex: 1;
+    padding: 5px 10px 5px 10px;
+    // background-color: $color-grey;
+    border: 1px solid $color-dark-Sand;
+    border-radius: 10px;
+    height: 50px;
+    font-size: inherit;
+    color: $color-dark-Sand;
+    &:focus {
+      // background-color: $color-white;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    &:hover {
+      color: $color-orange;
+      background-color: $color-dark-Sand;
+      transform: scale(1.1);
+    }
+  }
+  &__button {
+    &:hover {
+      color: $color-orange;
+      background-color: $color-dark-Sand;
+      transform: scale(1.1);
+    }
+  }
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}

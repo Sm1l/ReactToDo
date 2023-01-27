@@ -1,0 +1,99 @@
+@import "./../App/variables.scss";
+
+.task {
+  &__container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid $color-dark-Sand;
+    border-radius: 10px;
+    padding: 20px;
+    transition: opacity 500ms ease-out;
+    opacity: 1;
+
+    &_checked {
+      cursor: default;
+      opacity: 0.4;
+      transition: opacity 500ms ease-out;
+      border: 1px dotted $color-dark-Sand;
+      & p {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__group {
+    position: relative;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__label {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid $color-dark-Sand;
+    top: 5px;
+    left: 0;
+    cursor: pointer;
+    transition: background-color 500ms ease-out;
+
+    &:hover {
+      background-color: $color-dark-Sand;
+      transition: background-color 500ms ease-out;
+    }
+    &:has(input:checked) {
+      //*крутая штука
+      background-color: $color-dark-Sand;
+      color: $color-pink-Sand;
+    }
+  }
+  &__checkbox {
+    appearance: none;
+    visibility: hidden;
+    position: absolute;
+  }
+
+  &__text {
+    margin: 0px 0px 0px 30px;
+    transition: transform 500ms ease-out;
+  }
+  &__text_active {
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 500ms ease-out;
+    }
+  }
+
+  &__delete {
+    background-color: $color-grey;
+    color: $color-dark-Sand;
+    &:hover {
+    }
+  }
+  &__delete_active {
+    &:hover {
+      color: $color-grey;
+      background-color: $color-dark-Sand;
+      transform: scale(1.1);
+    }
+  }
+}
