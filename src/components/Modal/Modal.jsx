@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 import "./modal.scss";
 
@@ -20,7 +20,7 @@ function Modal({ modalVisible, setModalVisible, taskList, setTaskList }) {
     return () => {
       window.removeEventListener("keydown", escListener);
     };
-  }, [modalVisible]);
+  });
 
   const handleChange = (e) => {
     setModalVisible((prev) => {
