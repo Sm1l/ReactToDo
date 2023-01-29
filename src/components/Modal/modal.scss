@@ -1,4 +1,6 @@
 @import "../App/variables";
+@import "../../abstracts/keyframes.scss";
+
 .modal {
   position: absolute;
   width: 100%;
@@ -61,6 +63,10 @@
   }
 }
 .hidden {
-  opacity: 0;
-  visibility: hidden;
+  animation: disappear 1000ms ease;
+  // opacity: 0;
+  // visibility: hidden;
+}
+.show-modal {
+  animation: appear 1000ms ease;
 }

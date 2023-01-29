@@ -1,0 +1,5 @@
+@import "../../abstracts/keyframes.scss";
+
+.delete-task {
+  animation: disappear 1000ms ease-in;
+}

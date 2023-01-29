@@ -10,7 +10,7 @@ function Add({ taskList, setTaskList }) {
   //* добавление task
   const addTask = (taskList, setTaskList) => {
     if (inputRef?.current?.value !== "") {
-      setTaskList([{ task: inputRef.current.value, checked: false, id: uuidv4() }, ...taskList]); //* addTask
+      setTaskList([{ task: inputRef.current.value, checked: false, id: uuidv4() }, ...taskList]);
       inputRef.current.value = "";
     }
   }; //

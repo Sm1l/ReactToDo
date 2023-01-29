@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Add from "../Add/Add";
 import Task from "../Task/Task";
 
-import "./_app.scss";
+import "./app.scss";
 import "./_container.scss";
 
 import "./_custom.scss";
@@ -25,8 +25,12 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("taskList", JSON.stringify(taskList));
-    // console.log(taskList);
   }, [taskList]);
+
+  // useEffect(() => {
+  //   localStorage.setItem("taskList", JSON.stringify(taskList));
+  //   // console.log(taskList);
+  // }, [taskList]);
 
   return (
     <div className="app">
@@ -42,8 +46,12 @@ function App() {
             setTaskList={setTaskList}
           />
         )}
-        {/* {<Modal modalVisible={modalVisible} setModalVisible={setModalVisible} />} */}
-        {/* setChecked={setChecked} checked={checked} */}
+        {/* <Modal
+          modalVisible={modalVisible}
+          setModalVisible={setModalVisible}
+          taskList={taskList}
+          setTaskList={setTaskList}
+        /> */}
       </main>
     </div>
   );
