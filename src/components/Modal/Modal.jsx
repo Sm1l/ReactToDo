@@ -20,7 +20,7 @@ function Modal({ modalVisible, setModalVisible, taskList, setTaskList }) {
     return () => {
       window.removeEventListener("keydown", escListener);
     };
-  });
+  }, []);
 
   const handleChange = (e) => {
     setModalVisible((prev) => {
