@@ -4,7 +4,6 @@ import "./singletask.scss";
 
 const SingleTask = ({ task, taskList, setTaskList, setModalVisible }) => {
   const refTaskItem = useRef();
-  //   const refModal = useRef();
 
   const deleteTask = (item, setTaskList) => {
     if (!item.checked) {

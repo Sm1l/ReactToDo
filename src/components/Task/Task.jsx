@@ -1,11 +1,6 @@
 import React from "react";
 import "./task.scss";
 import SingleTask from "../SingleTask/SingleTask";
-// import { useRef } from "react";
-//todo------test-----------------
-// import styled, { keyframes } from "styled-components";
-// import { shake } from "react-animations";
-//todo------test-----------------
 
 function Task({ taskList, setTaskList, setModalVisible }) {
   return (

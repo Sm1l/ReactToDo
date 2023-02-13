@@ -9,8 +9,7 @@ import "./_container.scss";
 import "./_custom.scss";
 import "./_focus.scss";
 import "./_font.scss";
-// import "./_general.scss";
-// import "./_keyframes.scss";
+
 import "./_page.scss";
 import "./_variables.scss";
 import Modal from "../Modal/Modal";
@@ -27,11 +26,6 @@ function App() {
     localStorage.setItem("taskList", JSON.stringify(taskList));
   }, [taskList]);
 
-  // useEffect(() => {
-  //   localStorage.setItem("taskList", JSON.stringify(taskList));
-  //   // console.log(taskList);
-  // }, [taskList]);
-
   return (
     <div className="app">
       <main className="page">
@@ -46,12 +40,6 @@ function App() {
             setTaskList={setTaskList}
           />
         )}
-        {/* <Modal
-          modalVisible={modalVisible}
-          setModalVisible={setModalVisible}
-          taskList={taskList}
-          setTaskList={setTaskList}
-        /> */}
       </main>
     </div>
   );

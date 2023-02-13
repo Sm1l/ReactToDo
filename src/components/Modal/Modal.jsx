@@ -3,11 +3,6 @@ import React, { useEffect } from "react";
 import "./modal.scss";
 
 function Modal({ modalVisible, setModalVisible, taskList, setTaskList }) {
-  // const refModal = useRef();
-  // console.log(refModal.current);
-
-  // const contextModal = React.createContext();
-
   useEffect(() => {
     const escListener = (e) => {
       if (modalVisible && e.key === "Escape") {
@@ -47,7 +42,6 @@ function Modal({ modalVisible, setModalVisible, taskList, setTaskList }) {
   };
 
   return (
-    // <div className={`modal ${modalVisible ? "show-modal" : "hidden"} `}>
     <>
       <div className={`modal ${modalVisible ? "show-modal" : "hidden"} `}>
         <div className="modal__container">
