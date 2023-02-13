@@ -1,6 +1,6 @@
 # myReactToDoList
 
-...loading
+https://sm1l.github.io/ReactToDo/
 
 To do list
 
