@@ -5,7 +5,6 @@ import Button from "../Button/Button";
 
 function Add({ taskList, setTaskList }) {
   const inputRef = useRef(); //* ~querySelector
-  // console.log(inputRef);
 
   //* добавление task
   const addTask = (taskList, setTaskList) => {
@@ -13,7 +12,7 @@ function Add({ taskList, setTaskList }) {
       setTaskList([{ task: inputRef.current.value, checked: false, id: uuidv4() }, ...taskList]);
       inputRef.current.value = "";
     }
-  }; //
+  };
 
   return (
     <section className="page__add add">

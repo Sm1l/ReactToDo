@@ -1,6 +1,7 @@
 @import "./../App/variables.scss";
 .add {
   &__container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +13,7 @@
   }
 
   &__form {
+    width: 100%;
   }
 
   &__label {
@@ -33,10 +35,31 @@
   }
 
   &__button {
+    background-color: blue;
     &:hover {
       color: $color-grey;
       background-color: $color-dark-Sand;
       transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .add {
+    width: 100%;
+    &__container {
+      min-width: 100%;
+      gap: 20px;
+    }
+
+    &__label {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__button {
+      width: 100%;
     }
   }
 }

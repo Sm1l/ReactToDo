@@ -70,3 +70,41 @@
 .show-modal {
   animation: appear 1000ms ease;
 }
+@media (max-width: 800px) {
+  .modal {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+
+    &__container {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+      // align-items: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-grey;
+      width: auto;
+      height: auto;
+      min-height: 200px;
+      min-width: 200px;
+      border: 1px solid $color-dark-Sand;
+      border-radius: 20px;
+    }
+    &__form {
+      padding: 50px 0 0;
+      flex-wrap: wrap;
+    }
+    &__close {
+      top: 10px;
+      right: 10px;
+    }
+    &__button {
+      width: 100%;
+    }
+  }
+}

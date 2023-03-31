@@ -1,7 +1,6 @@
 @import "_variables.scss";
 .page {
   max-width: 800px;
-  // min-height: 100vh;
   background-color: $color-grey;
   margin: 0 auto;
   display: flex;
@@ -13,4 +12,12 @@
 
   gap: 20px;
   padding: 50px;
+}
+
+@media (max-width: 800px) {
+  .page {
+    gap: 20px;
+    padding: 30px 20px;
+    width: 100%;
+  }
 }

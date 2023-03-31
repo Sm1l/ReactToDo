@@ -1,7 +1,5 @@
-# myReactToDoList
+https://sm1l.github.io/ReactToDo/
 
-...loading
+Обычный ToDoList. Изменить, удалить, добавить элементы. Знакомство с React=)
 
-To do list
-
-React, scss
+React, scss.
