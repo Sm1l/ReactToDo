@@ -20,7 +20,7 @@ function App() {
   });
 
   const [modalVisible, setModalVisible] = useState(null);
-  console.log(modalVisible);
+  // console.log(modalVisible);
 
   useEffect(() => {
     localStorage.setItem("taskList", JSON.stringify(taskList));
